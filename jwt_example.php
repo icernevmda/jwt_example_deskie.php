@@ -1,8 +1,8 @@
 <?php
 
 /*
-JWT можно скачать по адресу https://github.com/firebase/php-jwt
-Также можно использовать JWT PEAR package http://pear.php.net/pepr/pepr-proposal-show.php?id=688
+JWT can be downloaded from the following link: https://github.com/firebase/php-jwt
+It is also possible to use JWT PEAR package http://pear.php.net/pepr/pepr-proposal-show.php?id=688
 */
 
 include "Authentication/JWT.php";
@@ -13,8 +13,8 @@ $payload = array(
 	"iat" => CURRENT_TIME,
 	"exp" => CURRENT_TIME+86400,
 	"email" => 'testuser@gmail.com',
-	"name" => 'Василий Пупкин',
-	"company_name" => 'Мосгорстрой',
+	"name" => 'John Foden',
+	"company_name" => 'Alfastar',
 	"company_position" => 'PHP Programmer',
 	"remote_photo_url" => 'http://mydomain.com/myimage.jpg',
 );
