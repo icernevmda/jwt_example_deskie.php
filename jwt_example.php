@@ -24,7 +24,7 @@ $subdomain = 'yourcompany';
 
 $encoded = JWT::encode($payload, $marker);
 
-$url = 'http://'.$subdomain.'.omnidesk.ru/access/jwt?jwt='.$encoded;
+$url = 'http://'.$subdomain.'.deskie.io/access/jwt?jwt='.$encoded;
 if(isset($_GET["return_to"])) {
   $url .= "&return_to=" . urlencode($_GET["return_to"]);
 }
